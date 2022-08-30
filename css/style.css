@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(19, 80, 194);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    margin: auto, auto;
+}
+
+input {
+    height: 120px;
+    font-size: 2rem;
+    width: 70%;
+    margin-left: 10%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+button#adicionar {
+    width: 20%;
+    cursor: pointer;
+    background: green;
+    color: white;
+    font-weight: bold;
+    border: none;
+    height: 120px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+main {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+.Item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 80px;
+    width: 100%;
+    box-shadow: 0px 0px 20px rgb(59, 58, 58);
+    border-radius: 10px;
+    margin-bottom: 2%;
+    cursor: pointer;
+}
+
+.ItemIcone {
+    flex: 20%;
+    text-align: center;
+
+}
+
+.ItemNome {
+    flex: 55%;
+    font-weight: bold;
+}
+
+.ItemBotao {
+    flex: 25%;
+
+}
+
+.deletar {
+    background: red;
+    color: white;
+    border: none;
+    height: 80px;
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.Item.clicado {
+    background-color: #d4f6d9;
+}
+
+.Item.clicado .ItemNome {
+    text-decoration: line-through;
+    color: grey;
+}
